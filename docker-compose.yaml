@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  conversor-distancia:
+    image: edgardzadra/conv-dist:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
